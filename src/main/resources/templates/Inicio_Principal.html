@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<div>
+    <a th:href="@{/nuevoProducto}" class="btn btn-secondary">Crear Producto</a>
+
+</div>
+
 <table class="table">
     <thead class="table-light">
 
@@ -17,6 +22,7 @@
         <th>Descripcion</th>
         <th>Cantidad</th>
         <th>Categoría</th>
+        <th>Acción</th>
 
     </tr>
 
@@ -29,6 +35,10 @@
         <td th:text="${producto.descripcion}"></td>
         <td th:text="${producto.cantidad}"></td>
         <td th:text="${producto.categoria}"></td>
+        <td>
+            <a th:href="@{/inicio/editar/{id}(id=${producto.id})}" class="btn btn-warning">Editar</a>
+            <a th:href="@{/eliminar/{id}(id=${producto.id})}" class="btn btn-danger">Eliminar</a>
+        </td>
 
     </tr>
 

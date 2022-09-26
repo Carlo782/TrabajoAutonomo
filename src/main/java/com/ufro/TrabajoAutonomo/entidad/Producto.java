@@ -1,10 +1,14 @@
 package com.ufro.TrabajoAutonomo.entidad;
 
+/**
+ * Producto representará los objetos que queremos almacenar en nuestra tabla productos en nuestra base de datos
+ */
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "productos")
+
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
