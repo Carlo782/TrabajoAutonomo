@@ -1,7 +1,7 @@
 package com.ufro.TrabajoAutonomo.entidad;
 
 /**
- * Producto representará los objetos que queremos almacenar en nuestra tabla productos en nuestra base de datos
+ * Producto representará un tipo de  objeto que queremos almacenar en nuestra tabla productos en nuestra base de datos
  */
 
 import javax.persistence.*;

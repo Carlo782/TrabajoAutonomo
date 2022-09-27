@@ -10,6 +10,7 @@
 
 <div>
     <a th:href="@{/nuevoProducto}" class="btn btn-secondary">Crear Producto</a>
+    <a th:href="@{/listar/usuarios}" class="btn btn-secondary">Ventana Usuario</a>
 
 </div>
 
@@ -36,8 +37,8 @@
         <td th:text="${producto.cantidad}"></td>
         <td th:text="${producto.categoria}"></td>
         <td>
-            <a th:href="@{/inicio/editar/{id}(id=${producto.id})}" class="btn btn-warning">Editar</a>
-            <a th:href="@{/eliminar/{id}(id=${producto.id})}" class="btn btn-danger">Eliminar</a>
+            <a th:href="@{/inicio/editar/{id}(id=${producto.id})}" class="btn btn-light">Editar</a>
+            <a th:href="@{/eliminar/{id}(id=${producto.id})}" class="btn btn-dark">Eliminar</a>
         </td>
 
     </tr>
